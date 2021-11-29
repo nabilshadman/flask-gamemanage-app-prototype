@@ -23,7 +23,7 @@ venv\Scripts\activate
 
 pip install Flask  
 
-For more details, visit this (link)[https://flask.palletsprojects.com/en/2.0.x/installation/]  
+For more details, visit this [link](https://flask.palletsprojects.com/en/2.0.x/installation/)  
 
 
 ## Run Flask App  
@@ -36,5 +36,4 @@ Powershell:
 $env:FLASK_APP = "app"
 flask run  
 
-For more details on running Flask applications, visit this (link)[https://flask.palletsprojects.com/en/2.0.x/quickstart/]  
- 
+For more details on running Flask applications, visit this [link](https://flask.palletsprojects.com/en/2.0.x/quickstart/)  

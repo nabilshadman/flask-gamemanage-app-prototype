@@ -44,34 +44,34 @@ def search_by_title():
     return render_template("search.html", movie=movie)
 
 
-@app.route("/favorites_list")
-def favorites_list():
-    favorites_list = session.get("favorites")
-    if bool(favorites_list) == False:
+@app.route("/collection_list")
+def collection_list():
+    collection_list = session.get("collection")
+    if bool(collection_list) == False:
         flash("Your Collection is empty. Add any game to it!")
         return redirect(url_for("main"))
     else:
-        return render_template("favorites.html", favorites_list=favorites_list)
+        return render_template("collection.html", collection_list=collection_list)
 
 
-@app.route("/add_to_favorites/<title>")
-def add_to_favorites(title):
-    favorites_list = {}
-    if "favorites" in session:
-        favorites_list = session.get("favorites")
+@app.route("/add_to_collection/<title>")
+def add_to_collection(title):
+    collection_list = {}
+    if "collection" in session:
+        collection_list = session.get("collection")
     else:
-        session["favorites"] = {}
-    favorites_list[title] = title
-    session["favorites"] = favorites_list
+        session["collection"] = {}
+    collection_list[title] = title
+    session["collection"] = collection_list
     return redirect(url_for("main"))
 
 
-@app.route("/remove_from_favorites/<title>")
-def remove_from_favorites(title):
-    favorites_list = session.get("favorites")
-    favorites_list.pop(title, None)
-    session["favorites"] = favorites_list
-    return redirect(url_for("favorites_list"))
+@app.route("/remove_from_collection/<title>")
+def remove_from_collection(title):
+    collection_list = session.get("collection")
+    collection_list.pop(title, None)
+    session["collection"] = collection_list
+    return redirect(url_for("collection_list"))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+
+
+{% block movies %}
+
+{% for value in favorites_list %}
+
+<div class="col-lg-12 mb-3">
+<div class="card">
+    <div class="card-body">
+      <p class="card-text">{{value}}</p>
+      <a href="{{url_for('single_movie',title=value)}}" class="btn btn-primary">Learn More</a>
+      <a href="{{url_for('remove_from_favorites',title=value)}}" class="btn btn-danger">Remove</a>
+    </div>
+  </div>
+  </div>
+
+{% endfor %}
+    
+{% endblock %}

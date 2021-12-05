@@ -8,7 +8,7 @@ app.secret_key = "moviesearchengine1234"
 
 @app.route("/")
 def main():
-    raw_data = requests.get("http://www.omdbapi.com/?apikey=d2b6a667&s=batman")
+    raw_data = requests.get("http://www.omdbapi.com/?apikey=d2b6a667&s=resident-evil")
     movies = raw_data.json()
     return render_template("home.html", movies=movies)
 

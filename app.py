@@ -48,7 +48,7 @@ def search_by_title():
 def favorites_list():
     favorites_list = session.get("favorites")
     if bool(favorites_list) == False:
-        flash("Your Favorites list is empty. Add any movie to it!")
+        flash("Your Collection is empty. Add any game to it!")
         return redirect(url_for("main"))
     else:
         return render_template("favorites.html", favorites_list=favorites_list)

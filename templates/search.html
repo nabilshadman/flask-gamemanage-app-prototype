@@ -47,6 +47,9 @@
           <p class="card-text">Country: {{movie.Country}}</p>
           <p class="card-text">Rating: {{movie.imdbRating}}</p>
           <p class="card-text">Awards: {{movie.Awards}}</p>
+
+          <a class="btn btn-primary" href="{{url_for('add_to_favorites', title=movie.Title)}}">Add To Favorites</a>
+
         </div>
       </div>
       </div>

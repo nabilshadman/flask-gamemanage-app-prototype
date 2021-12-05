@@ -3,7 +3,7 @@ import requests
 
 
 app = Flask(__name__)
-app.secret_key = "moviesearchengine1234"
+app.secret_key = "gamesearchengine1234"
 
 
 @app.route("/")

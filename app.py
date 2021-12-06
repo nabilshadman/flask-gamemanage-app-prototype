@@ -37,11 +37,11 @@ def search_by_title():
     title = request.form["title"]
     year = request.form["year"]
     if year != "":
-        raw_data = requests.get("http://www.omdbapi.com/?apikey=d2b6a667&t="+title+"&y="+year)
+        raw_data = requests.get("http://www.omdbapi.com/?apikey=d2b6a667&s="+title+"&y="+year)
     else:
-        raw_data = requests.get("http://www.omdbapi.com/?apikey=d2b6a667&t="+title)
-    movie = raw_data.json()
-    return render_template("search.html", movie=movie)
+        raw_data = requests.get("http://www.omdbapi.com/?apikey=d2b6a667&s="+title)
+    movies = raw_data.json()
+    return render_template("search.html", movies=movies)
 
 
 @app.route("/collection_list")

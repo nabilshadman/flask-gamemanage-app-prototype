@@ -63,6 +63,7 @@ def add_to_collection(title):
         session["collection"] = {}
     collection_list[title] = title
     session["collection"] = collection_list
+    flash("The game has been added to your Collection!")
     return redirect(url_for("main"))
 
 

@@ -49,7 +49,7 @@ def collection_list():
     collection_list = session.get("collection")
     if bool(collection_list) == False:
         flash("Your Collection is empty. Add any game to it!")
-        return redirect(url_for("main"))
+        return render_template("collection.html", collection_list=collection_list)
     else:
         return render_template("collection.html", collection_list=collection_list)
 

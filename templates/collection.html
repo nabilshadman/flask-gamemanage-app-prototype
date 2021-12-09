@@ -3,38 +3,38 @@
 
 {% block movies %}
 
-<div class="card mb-3">
-  <div class="row g-0">
-    <div class="col-md-4">
-		<img src="{{url_for('static', filename='13kfji903oeppsoq.png')}}" class="img-fluid rounded-start" style="width: 150px; height: 150px;" alt="avatar" />
-    </div>
-	<div class="col-md-8">
-	  <div class="card-body">
-        <h5 class="card-title">Your information</h5>
-        <p class="card-text"><b>Name:</b> First Last</p>
-		<p class="card-text"><b>Age:</b> 20</p>
-		<p class="card-text"><b>Location:</b> New York, NY</p>
+
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-4">
+      <img src="{{url_for('static', filename='13kfji903oeppsoq.png')}}" class="img-fluid rounded-start" style="width: 150px; height: 150px;" alt="avatar" />
       </div>
+    <div class="col-md-8">
+    <div class="card-body">
+        <h5 class="card-title">First Last</h5>
+        <p class="card-text"><b>Age:</b> 20</p>
+        <p class="card-text"><b>Location:</b> New York, NY</p>
+    </div>
+    </div>
     </div>
   </div>
-</div>
-<div class="card mb-3">
-  <div class="card-header">
-    Your Collection
+
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <b>Collection</b>
+    </div>
+    <ul class="list-group list-group-flush">
+    {% for value in collection_list %}
+      <li class="list-group-item">
+          <p class="card-text">{{value}}</p>
+          <a href="{{url_for('single_movie',title=value)}}" class="btn btn-dark btn-sm">Learn More</a>
+          <a href="{{url_for('remove_from_collection',title=value)}}" class="btn btn-danger btn-sm">Remove</a>
+      </li>
+    {% endfor %}	
+    </ul>	
+
   </div>
-  <ul class="list-group list-group-flush">
-
-{% for value in collection_list %}
-
-	<li class="list-group-item">{{value}}
-      <a href="{{url_for('single_movie',title=value)}}" class="btn btn-dark btn-sm">Learn More</a>
-      <a href="{{url_for('remove_from_collection',title=value)}}" class="btn btn-danger btn-sm">Remove</a>
-    </li>
-	
-{% endfor %}	
-
-  </ul>	
-</div>
 
     
 {% endblock %}

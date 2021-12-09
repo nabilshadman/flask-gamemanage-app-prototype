@@ -2,13 +2,13 @@
 
 {% block search %}
 
-<form class="col-lg" action="{{url_for('search_by_title')}}" method="post">
+<form class="col-lg" action="{{url_for('search_by_name')}}" method="post">
 
     <div class="form-row">
 
         <div class="col-md-6 mb-3">
             <label for="validationTitle">Title</label>
-            <input type="text" name="title" class="form-control" placeholder="Title" required>
+            <input type="text" name="name" class="form-control" placeholder="Title" required>
         </div>
 
         <div class="col-md-6 mb-3">

@@ -32,18 +32,18 @@ def search_form():
     return render_template("search.html")
 
 
-@app.route("/search_by_title", methods=["POST"])
-def search_by_title():
-    title = request.form["title"]
+@app.route("/search_by_name", methods=["POST"])
+def search_by_name():
+    name = request.form["name"]
     year = request.form["year"]
     if year != "":
         raw_data = requests.get(
-            "https://api.boardgameatlas.com/api/search?name="+title
+            "https://api.boardgameatlas.com/api/search?name="+name
             +"&year_published="+year
             +"&client_id=JLBr5npPhV")
     else:
         raw_data = requests.get(
-            "https://api.boardgameatlas.com/api/search?name="+title
+            "https://api.boardgameatlas.com/api/search?name="+name
             +"&client_id=JLBr5npPhV")
     games = raw_data.json()
     return render_template("search.html", games=games)

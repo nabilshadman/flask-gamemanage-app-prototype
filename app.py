@@ -13,9 +13,9 @@ def main():
     return render_template("home.html", movies=movies)
 
 
-@app.route("/<title>")
-def movies_by_title(title):
-    raw_data = requests.get("http://www.omdbapi.com/?apikey=d2b6a667&s="+title)
+@app.route("/<name>")
+def movies_by_name(name):
+    raw_data = requests.get("https://api.boardgameatlas.com/api/search?name="+name+"&client_id=JLBr5npPhV")
     movies = raw_data.json()
     return render_template("home.html", movies=movies)
 

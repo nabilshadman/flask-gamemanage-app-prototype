@@ -25,7 +25,7 @@
       <b>Collection</b>
     </div>
     <ul class="list-group list-group-flush">
-      {% if collection_list %}
+    {% if collection_list %}
       {% for id in collection_list %}
         <li class="list-group-item">
             <p class="card-text">{{collection_list[id]}}</p>
@@ -39,7 +39,6 @@
       </li>
     {% endif %}	
     </ul>	
-
   </div>
 
     

@@ -70,10 +70,10 @@ def add_to_collection(id):
     return redirect(url_for("main"))
 
 
-@app.route("/remove_from_collection/<title>")
-def remove_from_collection(title):
+@app.route("/remove_from_collection/<id>")
+def remove_from_collection(id):
     collection_list = session.get("collection")
-    collection_list.pop(title, None)
+    collection_list.pop(id, None)
     session["collection"] = collection_list
     return redirect(url_for("collection_list"))
 

@@ -9,22 +9,22 @@ app.secret_key = "gamesearchengine1234"
 @app.route("/")
 def main():
     raw_data = requests.get("https://api.boardgameatlas.com/api/search?name=Catan&client_id=JLBr5npPhV")
-    movies = raw_data.json()
-    return render_template("home.html", movies=movies)
+    games = raw_data.json()
+    return render_template("home.html", games=games)
 
 
 @app.route("/<name>")
-def movies_by_name(name):
+def games_by_name(name):
     raw_data = requests.get("https://api.boardgameatlas.com/api/search?name="+name+"&client_id=JLBr5npPhV")
-    movies = raw_data.json()
-    return render_template("home.html", movies=movies)
+    games = raw_data.json()
+    return render_template("home.html", games=games)
 
 
-@app.route("/single_movie/<id>")
-def single_movie(id):
+@app.route("/single_game/<id>")
+def single_game(id):
     raw_data = requests.get("https://api.boardgameatlas.com/api/search?ids="+id+"&client_id=JLBr5npPhV")
-    movie = raw_data.json()
-    return render_template("single_movie.html", movie=movie)
+    game = raw_data.json()
+    return render_template("single_game.html", game=game)
 
 
 @app.route("/search")
@@ -45,8 +45,8 @@ def search_by_title():
         raw_data = requests.get(
             "https://api.boardgameatlas.com/api/search?name="+title
             +"&client_id=JLBr5npPhV")
-    movies = raw_data.json()
-    return render_template("search.html", movies=movies)
+    games = raw_data.json()
+    return render_template("search.html", games=games)
 
 
 @app.route("/collection_list")

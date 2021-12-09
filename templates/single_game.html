@@ -1,0 +1,31 @@
+{% extends "index.html" %}
+
+
+{% block games %}
+
+<div class="col-sm-3 mb-3">
+    <img src="{{game.games[0].image_url}}" class="img-thumbnail" alt="...">
+</div>
+
+<div class="col-lg mb-3">
+<div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{game.games[0].name}}</h5>
+      <p class="card-text">Year: {{game.games[0].year_published}}</p>
+      <p class="card-text">Minimum Players: {{game.games[0].min_players}}</p>
+      <p class="card-text">Maximum Players: {{game.games[0].max_players}}</p>
+      <p class="card-text">Minimum Playtime: {{game.games[0].min_playtime}} minutes</p>
+      <p class="card-text">Maximum Playtime: {{game.games[0].max_playtime}} minutes</p>
+      <p class="card-text">Minimum Age: {{game.games[0].min_age}} years</p>
+      <p class="card-text">Rating: {{game.games[0].average_user_rating}}</p>
+      <p class="card-text">Price: ${{game.games[0].price}}</p>
+      <p class="card-text"><b>Description:</b> {{game.games[0].description_preview}}</p>
+
+    <a class="btn btn-secondary btn-sm" href="{{url_for('add_to_collection', id=game.games[0].id)}}">Add To Collection</a>
+
+    </div>
+  </div>
+  </div>
+
+    
+{% endblock %}

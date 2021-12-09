@@ -4,25 +4,24 @@
 {% block movies %}
 
 <div class="col-sm-3 mb-3">
-    <img src="{{movie.Poster}}" class="img-thumbnail" alt="...">
+    <img src="{{movie.games[0].image_url}}" class="img-thumbnail" alt="...">
 </div>
 
 <div class="col-lg mb-3">
 <div class="card">
     <div class="card-body">
-      <h5 class="card-title">{{movie.Title}}</h5>
-      <p class="card-text">Year: {{movie.Year}}</p>
-      <p class="card-text">Plot: {{movie.Plot}}</p>
-      <p class="card-text">Runtime: {{movie.Runtime}}</p>
-      <p class="card-text">Released: {{movie.Released}}</p>
-      <p class="card-text">Director: {{movie.Director}}</p>
-      <p class="card-text">Actors: {{movie.Actors}}</p>
-      <p class="card-text">Language: {{movie.Language}}</p>
-      <p class="card-text">Country: {{movie.Country}}</p>
-      <p class="card-text">Rating: {{movie.imdbRating}}</p>
-      <p class="card-text">Awards: {{movie.Awards}}</p>
+      <h5 class="card-title">{{movie.games[0].name}}</h5>
+      <p class="card-text">Year: {{movie.games[0].year_published}}</p>
+      <p class="card-text">Minimum Players: {{movie.games[0].min_players}}</p>
+      <p class="card-text">Maximum Players: {{movie.games[0].max_players}}</p>
+      <p class="card-text">Minimum Playtime: {{movie.games[0].min_playtime}} minutes</p>
+      <p class="card-text">Maximum Playtime: {{movie.games[0].max_playtime}} minutes</p>
+      <p class="card-text">Minimum Age: {{movie.games[0].min_age}} years</p>
+      <p class="card-text">Rating: {{movie.games[0].average_user_rating}}</p>
+      <p class="card-text">Price: ${{movie.games[0].price}}</p>
+      <p class="card-text"><b>Description:</b> {{movie.games[0].description_preview}}</p>
 
-    <a class="btn btn-secondary btn-sm" href="{{url_for('add_to_collection', title=movie.Title)}}">Add To Collection</a>
+    <a class="btn btn-secondary btn-sm" href="{{url_for('add_to_collection', id=movie.games[0].id)}}">Add To Collection</a>
 
     </div>
   </div>

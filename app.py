@@ -8,7 +8,7 @@ app.secret_key = "gamesearchengine1234"
 
 @app.route("/")
 def main():
-    raw_data = requests.get("http://www.omdbapi.com/?apikey=d2b6a667&s=resident-evil")
+    raw_data = requests.get("https://api.boardgameatlas.com/api/search?name=Catan&client_id=JLBr5npPhV")
     movies = raw_data.json()
     return render_template("home.html", movies=movies)
 
@@ -20,9 +20,9 @@ def movies_by_title(title):
     return render_template("home.html", movies=movies)
 
 
-@app.route("/single_movie/<title>")
-def single_movie(title):
-    raw_data = requests.get("http://www.omdbapi.com/?apikey=d2b6a667&t="+title)
+@app.route("/single_movie/<id>")
+def single_movie(id):
+    raw_data = requests.get("https://api.boardgameatlas.com/api/search?ids="+id+"&client_id=JLBr5npPhV")
     movie = raw_data.json()
     return render_template("single_movie.html", movie=movie)
 
@@ -54,14 +54,17 @@ def collection_list():
         return render_template("collection.html", collection_list=collection_list)
 
 
-@app.route("/add_to_collection/<title>")
-def add_to_collection(title):
+@app.route("/add_to_collection/<id>")
+def add_to_collection(id):
     collection_list = {}
     if "collection" in session:
         collection_list = session.get("collection")
     else:
         session["collection"] = {}
-    collection_list[title] = title
+    game = requests.get(
+        "https://api.boardgameatlas.com/api/search?ids="+
+        id+"&client_id=JLBr5npPhV").json()
+    collection_list[id] = game['games'][0]['name']
     session["collection"] = collection_list
     flash("The game has been added to your Collection!")
     return redirect(url_for("main"))

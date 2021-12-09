@@ -3,16 +3,16 @@
 
 {% block movies %}
 
-{% for movie in movies.Search %}
+{% for movie in movies.games %}
 
 <div class="col-sm mb-3">
 <div class="card" style="width: 18rem;">
-    <img src="{{movie.Poster}}" class="card-img-top" alt="...">
+    <img src="{{movie.image_url}}" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">{{movie.Title}}</h5>
-      <p class="card-text">{{movie.Year}}</p>
-      <a class="btn btn-dark btn-sm" href="{{url_for('single_movie',title=movie.Title)}}" >Learn More</a>
-      <a class="btn btn-secondary btn-sm" href="{{url_for('add_to_collection', title=movie.Title)}}">Add To Collection</a>
+      <h5 class="card-title">{{movie.name}}</h5>
+      <p class="card-text">{{movie.year_published}}</p>
+      <a class="btn btn-dark btn-sm" href="{{url_for('single_movie',id=movie.id)}}">Learn More</a>
+      <a class="btn btn-secondary btn-sm" href="{{url_for('add_to_collection', id=movie.id)}}">Add To Collection</a>
     </div>
   </div>
   </div>

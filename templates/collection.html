@@ -27,8 +27,8 @@
     <ul class="list-group list-group-flush">
     {% for value in collection_list %}
       <li class="list-group-item">
-          <p class="card-text">{{value}}</p>
-          <a href="{{url_for('single_movie',title=value)}}" class="btn btn-dark btn-sm">Learn More</a>
+          <p class="card-text">{{collection_list[value]}}</p>
+          <a href="{{url_for('single_movie',id=value)}}" class="btn btn-dark btn-sm">Learn More</a>
           <a href="{{url_for('remove_from_collection',title=value)}}" class="btn btn-danger btn-sm">Remove</a>
       </li>
     {% endfor %}	

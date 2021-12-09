@@ -37,9 +37,14 @@ def search_by_title():
     title = request.form["title"]
     year = request.form["year"]
     if year != "":
-        raw_data = requests.get("http://www.omdbapi.com/?apikey=d2b6a667&s="+title+"&y="+year)
+        raw_data = requests.get(
+            "https://api.boardgameatlas.com/api/search?name="+title
+            +"&year_published="+year
+            +"&client_id=JLBr5npPhV")
     else:
-        raw_data = requests.get("http://www.omdbapi.com/?apikey=d2b6a667&s="+title)
+        raw_data = requests.get(
+            "https://api.boardgameatlas.com/api/search?name="+title
+            +"&client_id=JLBr5npPhV")
     movies = raw_data.json()
     return render_template("search.html", movies=movies)
 

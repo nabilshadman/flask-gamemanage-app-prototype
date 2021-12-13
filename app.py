@@ -8,7 +8,7 @@ app.secret_key = "gamesearchengine1234"
 
 @app.route("/")
 def main():
-    raw_data = requests.get("https://api.boardgameatlas.com/api/search?name=Catan&client_id=JLBr5npPhV")
+    raw_data = requests.get("https://api.boardgameatlas.com/api/search?name=board&client_id=JLBr5npPhV")
     games = raw_data.json()
     return render_template("home.html", games=games)
 

@@ -13,19 +13,19 @@
     <div class="carousel-item active">
       <img src="{{url_for('static', filename='world_of_warcraft.jpg')}}" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5><div class="p-3 mb-2 bg-dark text-white">Collect your games in one place</div></h5>
+        <p><div class="p-3 mb-2 bg-white text-dark"><b>Collect your games in one place</b></div></p>
       </div>
     </div>
     <div class="carousel-item">
       <img src="{{url_for('static', filename='pandemic_board_game.jpg')}}" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5><div class="p-3 mb-2 bg-dark text-white">Search for new games</div></h5>
+        <p><div class="p-3 mb-2 bg-white text-dark"><b>Search for new games</b></div></p>
       </div>
     </div>
     <div class="carousel-item">
       <img src="{{url_for('static', filename='fortnite_gaming_competition.jpg')}}" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5><div class="p-3 mb-2 bg-dark text-white">Connect with other gamers</div></h5>
+        <p><div class="p-3 mb-2 bg-white text-dark"><b>Connect with other gamers</b></div></p>
       </div>
     </div>
   </div>
@@ -40,14 +40,12 @@
 </div>
 
 
-<div class="row justify-content-center">
-  <div class="card text-white text-center bg-dark mb-3 w-75">
+  <div class="card text-dark bg-white border-0 mb-3">
     <div class="card-body">
-      <h5 class="card-title">GameManage</h5>
-      <p class="card-text">Collect your games, search for new games, and connect with other gamers!</p>
+      <h4 class="card-title">GameManage</h4>
+      <p class="card-text">We help you collect your games, search for new games, and connect with other gamers!</p>
     </div>
   </div>
-</div>
 
 
 {% for game in games.games %}

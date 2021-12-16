@@ -1,7 +1,10 @@
 ## GameManage
-A web app to collect your games in one place, and to search for new games.  
+A full-stack web application to collect your games in one place, search for new games, and connect with other gamers.  
 
+Deployed prototype version used in usability testing: http://gamemanage-flask-app.herokuapp.com/  
+Deployed final version of protoype: https://gamemanage-prototype-app.herokuapp.com/  
 
+If you want to clone the repository for further development of this application in your local machine, please refer to the instructions below.  
 
 
 ## Install Python 3.9  
@@ -64,7 +67,7 @@ pip install -r requirements.txt
 
 If you are contributing to this project, please ensure to update the requirements.txt file for other developers or users using the following command:  
 
-pip freeze > requirements.txt
+pip freeze > requirements.txt  
 
 
 
@@ -76,7 +79,7 @@ export FLASK_APP=app
 flask run  
 
 Powershell:  
-$env:FLASK_APP = "app"
+$env:FLASK_APP = "app"  
 flask run  
 
 For more details on running Flask applications, visit this [link](https://flask.palletsprojects.com/en/2.0.x/quickstart/).    

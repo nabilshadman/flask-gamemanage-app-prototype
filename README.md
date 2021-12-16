@@ -21,6 +21,20 @@ You may follow this page https://www.ics.uci.edu/~pattis/common/handouts/pythone
 
 
 
+## Clone Repository
+
+Clone with SSH:  
+git clone git@git.ecdf.ed.ac.uk:sd2122online/group_2.git  
+
+Clone with HTTPS:   
+git clone https://git.ecdf.ed.ac.uk/sd2122online/group_2.git   
+
+Go to the project directory:  
+cd group_2  
+
+
+
+
 ## Install Flask  
 1. Create environment  
 
@@ -42,7 +56,7 @@ venv\Scripts\activate
 
 pip install Flask  
 
-For more details, visit this [link](https://flask.palletsprojects.com/en/2.0.x/installation/)  
+For more details, visit this [link](https://flask.palletsprojects.com/en/2.0.x/installation/).   
 
 4. Install other dependencies  
 
@@ -65,4 +79,4 @@ Powershell:
 $env:FLASK_APP = "app"
 flask run  
 
-For more details on running Flask applications, visit this [link](https://flask.palletsprojects.com/en/2.0.x/quickstart/)  
+For more details on running Flask applications, visit this [link](https://flask.palletsprojects.com/en/2.0.x/quickstart/).    

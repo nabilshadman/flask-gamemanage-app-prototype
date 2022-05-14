@@ -27,13 +27,13 @@ You may follow this page https://www.ics.uci.edu/~pattis/common/handouts/pythone
 ## Clone Repository
 
 Clone with SSH:  
-git clone git@git.ecdf.ed.ac.uk:sd2122online/group_2.git  
+git clone git@github.com:nabilshadman/gamemanage-app-prototype.git    
 
 Clone with HTTPS:   
-git clone https://git.ecdf.ed.ac.uk/sd2122online/group_2.git   
+git clone https://github.com/nabilshadman/gamemanage-app-prototype.git   
 
 Go to the project directory:  
-cd group_2  
+cd gamemanage-app-prototype    
 
 
 

@@ -1,5 +1,5 @@
 ## GameManage
-A full-stack web application to collect your games in one place, search for new games, and connect with other gamers.  
+A prototype of a full-stack web application to collect your games in one place, search for new games, and connect with other gamers.  
 
 Deployed prototype version used in usability testing: https://gamemanage-flask-app.herokuapp.com/  
 Deployed final version of protoype: https://gamemanage-prototype-app.herokuapp.com/  
@@ -27,13 +27,13 @@ You may follow this page https://www.ics.uci.edu/~pattis/common/handouts/pythone
 ## Clone Repository
 
 Clone with SSH:  
-git clone git@github.com:nabilshadman/gamemanage-app-prototype.git    
+```git clone git@github.com:nabilshadman/gamemanage-app-prototype.git```      
 
 Clone with HTTPS:   
-git clone https://github.com/nabilshadman/gamemanage-app-prototype.git   
+```git clone https://github.com/nabilshadman/gamemanage-app-prototype.git```     
 
 Go to the project directory:  
-cd gamemanage-app-prototype    
+```cd gamemanage-app-prototype```      
 
 
 
@@ -42,32 +42,32 @@ cd gamemanage-app-prototype
 1. Create environment  
 
 Linux/macOS:  
-python3 -m venv venv  
+```python3 -m venv venv```    
 
 Windows:  
-py -3 -m venv venv  
+```py -3 -m venv venv```    
 
 2. Activate the environment  
 
 Linux/macOS:  
-. venv/bin/activate  
+```. venv/bin/activate```    
 
 Windows:  
-venv\Scripts\activate  
+```venv\Scripts\activate```    
 
 3. Install Flask  
 
-pip install Flask  
+```pip install Flask```    
 
 For more details, visit this [link](https://flask.palletsprojects.com/en/2.0.x/installation/).   
 
 4. Install other dependencies  
 
-pip install -r requirements.txt  
+```pip install -r requirements.txt```    
 
 If you are contributing to this project, please ensure to update the requirements.txt file for other developers or users using the following command:  
 
-pip freeze > requirements.txt  
+```pip freeze > requirements.txt```    
 
 
 
@@ -75,11 +75,11 @@ pip freeze > requirements.txt
 ## Run Flask App  
 
 Bash:  
-export FLASK_APP=app  
-flask run  
+```export FLASK_APP=app```    
+```flask run```    
 
 Powershell:  
-$env:FLASK_APP = "app"  
-flask run  
+```$env:FLASK_APP = "app"```    
+```flask run```    
 
 For more details on running Flask applications, visit this [link](https://flask.palletsprojects.com/en/2.0.x/quickstart/).    

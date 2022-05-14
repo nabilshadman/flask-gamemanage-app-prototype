@@ -27,10 +27,10 @@ You may follow this page https://www.ics.uci.edu/~pattis/common/handouts/pythone
 ## Clone Repository
 
 Clone with SSH:  
-```git clone git@github.com:nabilshadman/gamemanage-app-prototype.git```      
+```git clone git@github.com:nabilshadman/flask-gamemanage-app-prototype.git```      
 
 Clone with HTTPS:   
-```git clone https://github.com/nabilshadman/gamemanage-app-prototype.git```     
+```git clone https://github.com/nabilshadman/flask-gamemanage-app-prototype.git```     
 
 Go to the project directory:  
 ```cd gamemanage-app-prototype```      

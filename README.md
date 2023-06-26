@@ -1,5 +1,7 @@
 ## GameManage
-A prototype of a full-stack web application to collect your games in one place, search for new games, and connect with other gamers.  
+A prototype of a full-stack web application to collect your games in one place, search for new games, and connect with other gamers. 
+
+You can read more about the project's requirements, design, plannning, implementation, testing, and review in the associated [wiki](https://github.com/nabilshadman/flask-gamemanage-app-prototype/wiki).  
 
 Deployed prototype version used in usability testing: https://gamemanage-flask-app.herokuapp.com/  
 Deployed final version of protoype: https://gamemanage-prototype-app.herokuapp.com/  

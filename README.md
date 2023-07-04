@@ -1,7 +1,9 @@
 ## GameManage
 A prototype of a full-stack web application to collect your games in one place, search for new games, and connect with other gamers. 
 
-You can read more about the project's requirements, design, plannning, implementation, testing, and review in the associated [wiki](https://github.com/nabilshadman/flask-gamemanage-app-prototype/wiki).  
+Tech stack: Python, Flask, HTML, Bootstrap, GitLab, Heroku, Lucidchart, Figma  
+
+You can read more about the project's requirements, design, plannning, implementation, testing, and review in the associated [wiki](https://github.com/nabilshadman/flask-gamemanage-app-prototype/wiki). The repository (and the wiki) has been migrated from GitLab to GitHub, and the current deployment uses Google Cloud Platform (GCP) instead of Heroku previously.
 
 You can view the deployed app protoype [here](https://pacific-destiny-391109.ue.r.appspot.com/).  
 

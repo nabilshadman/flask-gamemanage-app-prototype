@@ -1,16 +1,16 @@
-## GameManage
-A prototype of a full-stack web application to collect your games in one place, search for new games, and connect with other gamers. 
+# 1. GameManage
+A **prototype** of a full-stack web application to collect your games in one place, search for new games, and connect with other gamers. 
 
-Tech stack: Python, Flask, HTML, Bootstrap, GitLab, Heroku, Lucidchart, Figma  
+**Tech stack:** Python, Flask, HTML, Bootstrap, GitLab, Heroku, Lucidchart, Figma  
 
 You can read more about the project's requirements, design, plannning, implementation, testing, and review in the associated [wiki](https://github.com/nabilshadman/flask-gamemanage-app-prototype/wiki). The repository (and the wiki) has been migrated from GitLab to GitHub, and the current deployment uses Google Cloud Platform (GCP) instead of Heroku previously.
 
 You can view the deployed app protoype [here](https://pacific-destiny-391109.ue.r.appspot.com/).  
 
-If you want to clone the repository for further development of this application in your local machine, please refer to the instructions below.  
+If you want to clone the repository for further development of this application on your local machine, please read the instructions below.  
 
 
-## Install Python 3.9  
+## 2. Install Python    
 We have used Python 3.9 for this project. Please ensure you have Python 3.9 or above installed in your system.  
 
 See Python's [website](https://www.python.org/downloads/) for downloading the latest version for your system.  
@@ -27,7 +27,7 @@ You may follow this [page](https://www.ics.uci.edu/~pattis/common/handouts/pytho
 
 
 
-## Clone Repository
+## 3. Clone Repository  
 
 (1) Clone with SSH:  
 ```git clone git@github.com:nabilshadman/flask-gamemanage-app-prototype.git```      
@@ -43,7 +43,7 @@ Clone with HTTPS:
 
 
 
-## Install Flask  
+## 4. Install Flask  
 (1) Create environment  
 
 Linux/macOS:  
@@ -70,14 +70,14 @@ For more details, visit this [page](https://flask.palletsprojects.com/en/2.0.x/i
 
 ```pip install -r requirements.txt```    
 
-If you are contributing to this project, please ensure to update the requirements.txt file for other developers or users with the following command:  
+If you are contributing to this project, please ensure to update the **requirements.txt** file for other developers or users with the following command:  
 
 ```pip freeze > requirements.txt```    
 
 
 
 
-## Run Flask App  
+## 5. Run Application    
 
 Bash:  
 ```export FLASK_APP=app```    

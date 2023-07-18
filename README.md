@@ -10,7 +10,7 @@ You can view the deployed app protoype [here](https://pacific-destiny-391109.ue.
 If you want to clone the repository for further development of this application on your local machine, please read the instructions below.  
 
 
-## 2. Install Python    
+# 2. Install Python    
 We have used Python 3.9 for this project. Please ensure you have Python 3.9 or above installed in your system.  
 
 See Python's [website](https://www.python.org/downloads/) for downloading the latest version for your system.  
@@ -27,7 +27,7 @@ You may follow this [page](https://www.ics.uci.edu/~pattis/common/handouts/pytho
 
 
 
-## 3. Clone Repository  
+# 3. Clone Repository  
 
 (1) Clone with SSH:  
 ```git clone git@github.com:nabilshadman/flask-gamemanage-app-prototype.git```      
@@ -43,7 +43,7 @@ Clone with HTTPS:
 
 
 
-## 4. Install Flask  
+# 4. Install Flask  
 (1) Create environment  
 
 Linux/macOS:  
@@ -77,7 +77,7 @@ If you are contributing to this project, please ensure to update the **requireme
 
 
 
-## 5. Run Application    
+# 5. Run Application    
 
 Bash:  
 ```export FLASK_APP=app```    

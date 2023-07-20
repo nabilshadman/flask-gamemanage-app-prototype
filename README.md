@@ -1,5 +1,5 @@
 # 1. GameManage
-A **prototype** of a full-stack web application to collect your games in one place, search for new games, and connect with other gamers. 
+A **prototype** of a full-stack web [application](https://pacific-destiny-391109.ue.r.appspot.com/) to collect your games in one place, search for new games, and connect with other gamers. 
 
 **Tech stack:** Python, Flask, HTML, Bootstrap, GitLab, Heroku, Lucidchart, Figma  
 

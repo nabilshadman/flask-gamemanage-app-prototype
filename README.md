@@ -1,17 +1,17 @@
 # 1. GameManage
 A **prototype** of a full-stack web [application](https://pacific-destiny-391109.ue.r.appspot.com/) to collect your games in one place, search for new games, and connect with other gamers. 
 
-**Tech stack:** Python, Flask, HTML, Bootstrap, GitLab, Heroku, Lucidchart, Figma  
+**Tech Stack:** Python, Flask, HTML, Bootstrap, GitLab, Heroku, Lucidchart, Figma  
 
-You can read more about the project's requirements, design, plannning, implementation, testing, and review in the associated [wiki](https://github.com/nabilshadman/flask-gamemanage-app-prototype/wiki). The repository (and the wiki) has been migrated from GitLab to GitHub, and the current deployment uses Google Cloud Platform (GCP) instead of Heroku previously.
+You can read more about the **project's** requirements, design, plannning, implementation, testing, and review in the associated [wiki](https://github.com/nabilshadman/flask-gamemanage-app-prototype/wiki). The repository (and the wiki) has been migrated from GitLab to GitHub, and the current deployment uses Google Cloud Platform (GCP) instead of Heroku previously.
 
-You can view the deployed app protoype [here](https://pacific-destiny-391109.ue.r.appspot.com/).  
+You can view the **deployed** app protoype [here](https://pacific-destiny-391109.ue.r.appspot.com/).  
 
-If you want to clone the repository for further development of this application on your local machine, please read the instructions below.  
+If you want to clone the repository for further development of this application on your local machine, please read the **instructions** below.  
 
 
 # 2. Install Python    
-We have used Python 3.9 for this project. Please ensure you have Python 3.9 or above installed in your system.  
+We have used **Python 3.9** for this project. Please ensure you have Python 3.9 or above installed in your system.  
 
 See Python's [website](https://www.python.org/downloads/) for downloading the latest version for your system.  
 

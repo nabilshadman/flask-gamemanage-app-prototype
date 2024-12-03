@@ -1,90 +1,87 @@
-# 1. GameManage
-A **prototype** of a full-stack web [application](https://pacific-destiny-391109.ue.r.appspot.com/) to collect your games in one place, search for new games, and connect with other gamers. 
+# GameManage
 
-**Tech Stack:** Python, Flask, HTML, Bootstrap, GitLab, Heroku, Lucidchart, Figma  
+## Overview
+GameManage is a full-stack web application that serves as your centralized gaming hub, allowing you to manage your game collection, discover new titles, and connect with fellow gamers. Experience the live prototype [here](https://pacific-destiny-391109.ue.r.appspot.com/).
 
-You can read more about the **project's** requirements, design, plannning, implementation, testing, and review in the associated [wiki](https://github.com/nabilshadman/flask-gamemanage-app-prototype/wiki). The repository (and the wiki) has been migrated from GitLab to GitHub, and the current deployment uses Google Cloud Platform (GCP) instead of Heroku previously.
+## Technology Stack
+- Backend: Python/Flask
+- Frontend: HTML, Bootstrap
+- Development: GitLab, GitHub
+- Deployment: Google Cloud Platform (formerly Heroku)
+- Design: Lucidchart, Figma
 
-You can view the **deployed** app protoype [here](https://pacific-destiny-391109.ue.r.appspot.com/).  
+## Documentation
+Comprehensive documentation covering requirements, design, planning, implementation, testing, and review is available in our [project wiki](https://github.com/nabilshadman/flask-gamemanage-app-prototype/wiki). Note that the repository and wiki have been migrated from GitLab to GitHub, and deployment has transitioned to Google Cloud Platform.
 
-If you want to clone the repository for further development of this application on your local machine, please read the **instructions** below.  
+## Local Development Setup
 
+### Prerequisites
+- Python 3.9 or higher ([Download](https://www.python.org/downloads/))
 
-# 2. Install Python    
-We have used **Python 3.9** for this project. Please ensure you have Python 3.9 or above installed in your system.  
+#### Platform-Specific Installation Guides
+- [Linux Installation Guide](https://docs.python-guide.org/starting/install3/linux/)
+- [macOS Installation Guide](https://python.tutorials24x7.com/blog/how-to-install-python-3-9-on-mac)
+- [Windows Installation Guide](https://www.ics.uci.edu/~pattis/common/handouts/pythoneclipsejava/python.html)
 
-See Python's [website](https://www.python.org/downloads/) for downloading the latest version for your system.  
+### Getting Started
 
-Linux:  
-You may follow this [page](https://docs.python-guide.org/starting/install3/linux/) for guidance on installing Python 3.9 on a Linux system.  
+1. Clone the Repository
+```bash
+# SSH
+git clone git@github.com:nabilshadman/flask-gamemanage-app-prototype.git
 
-macOS:  
-You may follow this [page](https://python.tutorials24x7.com/blog/how-to-install-python-3-9-on-mac) for guidance on installing Python 3.9 on a macOS system.  
+# or HTTPS
+git clone https://github.com/nabilshadman/flask-gamemanage-app-prototype.git
 
-Windows:  
-You may follow this [page](https://www.ics.uci.edu/~pattis/common/handouts/pythoneclipsejava/python.html) for guidance on installing Python 3.9 on a Windows system.  
+# Navigate to project directory
+cd gamemanage-app-prototype
+```
 
+2. Set Up Virtual Environment
+```bash
+# Create virtual environment
+# Linux/macOS
+python3 -m venv venv
 
+# Windows
+py -3 -m venv venv
 
+# Activate virtual environment
+# Linux/macOS
+source venv/bin/activate
 
-# 3. Clone Repository  
+# Windows
+venv\Scripts\activate
+```
 
-(1) Clone with SSH:  
-```git clone git@github.com:nabilshadman/flask-gamemanage-app-prototype.git```      
+3. Install Dependencies
+```bash
+# Install Flask
+pip install Flask
 
-OR  
+# Install project dependencies
+pip install -r requirements.txt
+```
 
-Clone with HTTPS:   
-```git clone https://github.com/nabilshadman/flask-gamemanage-app-prototype.git```     
+4. Launch Application
+```bash
+# Linux/macOS
+export FLASK_APP=app
+flask run
 
-(2) Go to the project directory:  
-```cd gamemanage-app-prototype```      
+# Windows PowerShell
+$env:FLASK_APP = "app"
+flask run
+```
 
+For detailed Flask configuration and running options, consult the [Flask Documentation](https://flask.palletsprojects.com/en/2.0.x/quickstart/).
 
+### Contributing
+When adding new dependencies, please update the requirements file:
+```bash
+pip freeze > requirements.txt
+```
 
-
-# 4. Install Flask  
-(1) Create environment  
-
-Linux/macOS:  
-```python3 -m venv venv```    
-
-Windows:  
-```py -3 -m venv venv```    
-
-(2) Activate the environment  
-
-Linux/macOS:  
-```. venv/bin/activate```    
-
-Windows:  
-```venv\Scripts\activate```    
-
-(3) Install Flask  
-
-```pip install Flask```    
-
-For more details, visit this [page](https://flask.palletsprojects.com/en/2.0.x/installation/).   
-
-(4) Install other dependencies  
-
-```pip install -r requirements.txt```    
-
-If you are contributing to this project, please ensure to update the **requirements.txt** file for other developers or users with the following command:  
-
-```pip freeze > requirements.txt```    
-
-
-
-
-# 5. Run Application    
-
-Bash:  
-```export FLASK_APP=app```    
-```flask run```    
-
-Powershell:  
-```$env:FLASK_APP = "app"```    
-```flask run```    
-
-For more details on running Flask applications, visit this [page](https://flask.palletsprojects.com/en/2.0.x/quickstart/).    
+## Additional Resources
+- [Flask Installation Guide](https://flask.palletsprojects.com/en/2.0.x/installation/)
+- [Flask Quickstart Guide](https://flask.palletsprojects.com/en/2.0.x/quickstart/)

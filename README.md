@@ -85,3 +85,18 @@ pip freeze > requirements.txt
 ## Additional Resources
 - [Flask Installation Guide](https://flask.palletsprojects.com/en/2.0.x/installation/)
 - [Flask Quickstart Guide](https://flask.palletsprojects.com/en/2.0.x/quickstart/)
+
+## License  
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE.txt) file for details.  
+
+## Citation  
+If you use this work in your research, please cite:  
+
+```bibtex  
+@misc{gamemanage-app,
+  author = {Shadman, Nabil},
+  title = {GameManage: Centralized Gaming Hub},
+  year = {2021},
+  publisher = {GitHub},
+  url = {https://github.com/nabilshadman/flask-gamemanage-app-prototype}
+}

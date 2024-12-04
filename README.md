@@ -94,9 +94,9 @@ If you use this work in your research, please cite:
 
 ```bibtex  
 @misc{gamemanage-app,
-  author = {Shadman, Nabil},
+  author = {Shadman, Nabil and Chan, Tom},
   title = {GameManage: Centralized Gaming Hub},
-  year = {2021},
+  year = {2024},
   publisher = {GitHub},
   url = {https://github.com/nabilshadman/flask-gamemanage-app-prototype}
 }

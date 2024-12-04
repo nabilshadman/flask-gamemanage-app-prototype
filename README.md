@@ -1,5 +1,14 @@
 # GameManage
 
+![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
+![Flask](https://img.shields.io/badge/flask-%23000.svg?style=flat&logo=flask&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=flat&logo=bootstrap&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat&logo=html5&logoColor=white)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![GCP](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat&logo=google-cloud&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=flat&logo=github&logoColor=white)
+
+
 ## Overview
 GameManage is a full-stack web application that serves as your centralized gaming hub, allowing you to manage your game collection, discover new titles, and connect with fellow gamers. Experience the live prototype [here](https://pacific-destiny-391109.ue.r.appspot.com/).
 

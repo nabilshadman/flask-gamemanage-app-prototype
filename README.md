@@ -96,7 +96,7 @@ If you use this work in your research, please cite:
 @misc{gamemanage-app,
   author = {Shadman, Nabil and Chan, Tom},
   title = {GameManage: Centralized Gaming Hub},
-  year = {2024},
+  year = {2021},
   publisher = {GitHub},
   url = {https://github.com/nabilshadman/flask-gamemanage-app-prototype}
 }

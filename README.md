@@ -1,4 +1,4 @@
-# GameManage
+# GameManage: Personal Gaming Collection Platform
 
 ![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
 ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=flat&logo=flask&logoColor=white)
@@ -117,7 +117,7 @@ If you use this work in your research, please cite:
 ```bibtex  
 @misc{gamemanage-app,
   author = {Shadman, Nabil and Chan, Tom},
-  title = {GameManage: Centralized Gaming Hub},
+  title = {GameManage: Personal Gaming Collection Platform},
   year = {2021},
   publisher = {GitHub},
   url = {https://github.com/nabilshadman/flask-gamemanage-app-prototype}

@@ -12,6 +12,19 @@
 ## Overview
 GameManage is a full-stack web application that serves as your centralized gaming hub, allowing you to manage your game collection, discover new titles, and connect with fellow gamers. Experience the live prototype [here](https://pacific-destiny-391109.ue.r.appspot.com/).
 
+## Platform Preview
+
+<div style="text-align: center">
+    <div style="display: inline-block; margin: 20px;">
+        <img src="https://github.com/nabilshadman/flask-gamemanage-app-prototype/assets/13073461/bfb279f6-8d15-4fcd-b48d-574106f1726d" alt="GameManage Homepage Carousel" width="600"/>
+        <p><em>Homepage featuring an interactive game carousel</em></p>
+    </div>
+    <div style="display: inline-block; margin: 20px;">
+        <img src="https://github.com/nabilshadman/flask-gamemanage-app-prototype/assets/13073461/e14c27e5-e558-4072-b3e5-650c6854c41d" alt="GameManage Featured Games" width="600"/>
+        <p><em>Featured games section showcasing popular titles</em></p>
+    </div>
+</div>
+
 ## Technology Stack
 - Backend: Python/Flask
 - Frontend: HTML, Bootstrap
